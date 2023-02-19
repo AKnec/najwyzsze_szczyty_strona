@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 najwyższych szczytów w Polsce</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.22/esri/themes/light/main.css">
+    <script src="script/script.js" defer></script>
+    <script src="https://js.arcgis.com/4.22/"></script>
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">Pięć Najwyższych szczytów w Polsce</h1>
+    </div>
+    <div id="main_graphic">
+        <img src="img/banner.jpg" alt="gory">
+        <a href="javascript:scroll(0, 745);">
+            <div id="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+    </div>
+    <div id="img_buttons">
+        <a id="a1"><img src="img/rysy1.png" onmouseover="this.src='img/rysy.png'" onmouseout="this.src='img/rysy1.png'" alt="rysy"></a>
+        <a id="a2"><img src="img/babiagora1.png" onmouseover="this.src='img/babiagora.png'" onmouseout="this.src='img/babiagora1.png'" alt="babia gora"></a>
+        <a id="a3"><img src="img/sniezka1.png" onmouseover="this.src='img/sniezka.png'" onmouseout="this.src='img/sniezka1.png'" alt="sniezka"></a>
+        <a id="a4"><img src="img/tarnica1.png" onmouseover="this.src='img/tarnica.png'" onmouseout="this.src='img/tarnica1.png'" alt="tarnica"></a>
+        <a id="a5"><img src="img/turbacz1.png" onmouseover="this.src='img/turbacz.png'" onmouseout="this.src='img/turbacz1.png'" alt="turbacz"></a>
+    </div>
+    <div id="map_div">
+    </div>
+    <div id=container>
+        <div class="container-left">
+            <h2 class="titles">Najwyższe szczyty w Polsce:</h2>
+            <hr>
+            <br>
+            <ol>
+                <li>Tatry: najwyższy szczyt - <b>Rysy (2499 m)</b></li>
+                <li>Beskid Żywiecki: najwyższy szczyt - <b>Babia Góra (1725 m)</b></li>
+                <li>Karkonosze: najwyższy szczyt - <b>Śnieżka (1603 m)</b></li>
+                <li>Bieszczady: najwyższy szczyt - <b>Tarnica (1346 m)</b></li>
+                <li>Gorce: najwyższy szczyt - <b>Turbacz (1310 m)</b></li>
+                <li>Beskid Sądecki: najwyższy szczyt - <b>Radziejowa (1262 m)</b></li>
+                <li>Beskid Śląski: najwyższy szczyt – <b>Skrzyczne (1257 m)</b></li>
+                <li>Beskid Wyspowy: najwyższy szczyt – <b>Mogielica (1170 m)</b></li>
+                <li>Góry Izerskie: najwyższy szczyt – <b>Wysoka Kopa (1126 m)</b></li>
+                <li>Góry Bialskie: najwyższy szczyt – <b>Postawna (1124 m)</b></li>
+            </ol>
+        </div>
+        <div class="container-right"> 
+            <h2 class="titles">Ciekawostka:</h2>
+            <hr>
+            <br>
+            <p id="text_div">&nbsp;&nbsp;&nbsp;&nbsp;Wierzchołek wielkiego i rozłożystego Sławkowskiego Szczytu był uważany niegdyś
+                za najwyższy punkt w Tatrach. Miejscowe przekazy podają, że 6 sierpnia 1662 r.
+                nastąpił gigantyczny obryw skalny, wskutek którego szczyt ten stracił ok. 300 m wysokości.
+            </p>
+            <br>
+            <br>
+            <br>
+            <input type="button" class="button" onclick="location.href='https://www.e-horyzont.pl/blog/najwyzsza-gora-w-polsce';" value="WIĘCEJ CIEKAWOSTEK"/>
+        </div>
+    </div>
+    <footer id=footer>
+        <p><small>Agata Kneć<br>
+        Studentka Uniwersytetu Marii Curie-Skłodowskiej w Lublinie<br>
+        Wszystkie prawa zastrzeżone &copy; 2022</small>
+        </p>
+    </footer>
+</body>
+</html>
